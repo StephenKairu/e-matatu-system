@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/9cd1c5457a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Admin panel</title>
 </head>
 
@@ -87,42 +88,53 @@
                 <h2>FLEETS</h2>
                 <br>
                 <div class="fleet-lined">
-                <div class="fleet-card">
-                    <img src="/assets/photos/mat.jpg" alt="matatu">
-                    <div class="fleet-content">
-                        <h3>Super Metro</h3>
+                    <div class="fleet-card">
+                        <img src="/assets/photos/mat.jpg" alt="matatu">
+                        <div class="fleet-content">
+                            <h3>Super Metro</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="fleet-card">
-                    <img src="/assets/photos/mat.jpg" alt="matatu">
-                    <div class="fleet-content">
-                        <h3>Super Metro</h3>
+                    <div class="fleet-card">
+                        <img src="/assets/photos/mat.jpg" alt="matatu">
+                        <div class="fleet-content">
+                            <h3>Super Metro</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="fleet-card">
-                    <img src="/assets/photos/mat.jpg" alt="matatu">
-                    <div class="fleet-content">
-                        <h3>Super Metro</h3>
+                    <div class="fleet-card">
+                        <img src="/assets/photos/mat.jpg" alt="matatu">
+                        <div class="fleet-content">
+                            <h3>Super Metro</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="fleet-card">
-                    <img src="/assets/photos/mat.jpg" alt="matatu">
-                    <div class="fleet-content">
-                        <h3>Super Metro</h3>
+                    <div class="fleet-card">
+                        <img src="/assets/photos/mat.jpg" alt="matatu">
+                        <div class="fleet-content">
+                            <h3>Super Metro</h3>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
             <!--Trips-->
-
+            <br>
+            <br>
+            <br>
             <div class="trips-section">
-                <h2>Trips</h2>
+                <div>
+                    <div id="container"></div>
+                </div>
+                <br>
 
-                <div id="container"></div>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div>
+                    <canvas id="myChart2"></canvas>
+                </div>
             </div>
 
 
@@ -130,7 +142,7 @@
 
 
     </div>
- <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 
 </body>
 
