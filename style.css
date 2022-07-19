@@ -23,6 +23,16 @@ h1 {
 .section2 {
     background-color: ;
 }
+.details {
+    display: flex;
+    flex-direction: row;
+}
+.details-left {
+    width: 50%;
+}
+.details-right {
+    width: 50%;
+}
 .section3 {
     background-color: ;
 }
