@@ -116,3 +116,33 @@
 .line {
     width: 100px;
 }
+
+/*fleet section*/
+
+.fleet-section h2 {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.fleet-card {
+    padding-left: 50px;
+}
+.fleet-card img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.fleet-content {
+    padding-left: 10px;
+}
+
+.fleet-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fleet-lined {
+    display: flex;
+    justify-content: space-between;
+}
