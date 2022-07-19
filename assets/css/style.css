@@ -1,6 +1,7 @@
 * {
     margin: 0;
 }
+
 /*top navbar*/
 .top-navbar {
     display: flex;
@@ -25,6 +26,7 @@
     display: inline-block;
     margin: 12px 3px 12px 8px;
 }
+
 .dot2 {
     height: 30px;
     width: 30px;
@@ -33,6 +35,7 @@
     display: inline-block;
     margin: 12px 3px 12px 3px;
 }
+
 .dot3 {
     height: 30px;
     width: 30px;
@@ -59,7 +62,7 @@
     color: #fff;
     list-style-type: none;
     font-size: 30px;
-    padding-top:  50px;
+    padding-top: 50px;
     padding-left: 10px;
 }
 
@@ -72,6 +75,7 @@
     color: #fff;
     list-style-type: none;
 }
+
 /*main body*/
 
 .main-content h1 {
@@ -79,4 +83,36 @@
     padding-top: 20px;
     text-decoration: underline;
     color: teal;
+}
+
+.card-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+.card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container h3{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.fa-solid {
+    padding-top: 5px;
+    padding-left: 120px;
+    font-size: 50px;
+}
+.card-section {
+    display: flex;
+    justify-content: space-between;
+}
+.line {
+    width: 100px;
 }
