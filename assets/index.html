@@ -5,29 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+        <!-- web cdn icons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Profile</title>
 </head>
 <body>
+    <nav>
+        <h4 id="welcome">Welcome John Doe,</h4>
+    </nav>
+    <div class="sidebar">
+                <div class="logo">
 
+                    <h1><span id="mat">e-</span>Matatu system</h1>
+                </div>    
 
-<section class="profile">
-    <h1><span id="matatu">e-</span>Matatu</h1>
-    <div class="container">
-        <div class="main">
-            <div class="topbar">
-                <a href="#">My Profile</a>
-                <a href="#">DashBoard</a>
-                <a href="#">Revenue</a>
-                <a href="#">Matatu Details</a>
-                <a href="#">Reports</a>
-            </div>
-            <div class="bottom">
-                <a href="#"><img src="./images/profilepic.png" width="60px" height="50px" alt="profile photo">My Profile</a>
-                <a href="#">Sign Out</a>
-            </div>
-        </div>
+        <ul class="nav_bar">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">My Profile</span>
+                </a>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                    <span class="tool">Dashboard</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-money-withdraw' ></i>
+                    <span class="links_name">Revenue</span>
+                </a>
+                    <span class="tool">Revenue</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-detail' ></i>
+                    <span class="links_name">Matatu Details</span>
+                </a>
+                    <span class="tool">Matatu Details</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bxs-report' ></i>
+                    <span class="links_name">Reports</span>
+                </a>
+                <span class="tool">Reports</span>
+            </li>
+        </ul>
+
+        <ul class="nav_bar">
+            <li id="john_doe">
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">John Doe</span>
+                </a>
+            </li>
+
+            <li id="sign_out">
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                </a>
+                <span class="links_name">Sign Out</span>
+            </li>    
+        </ul>
     </div>
-</section>
-
 </body>
 </html>
