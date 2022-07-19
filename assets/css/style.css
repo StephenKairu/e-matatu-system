@@ -5,9 +5,10 @@
 .top-navbar {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: teal;
     color: #fff;
     height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(184, 177, 177, 0.973);
 }
 
 .top-navbar h1 {
@@ -27,7 +28,7 @@
 .dot2 {
     height: 30px;
     width: 30px;
-    background-color: green;
+    background-color: greenyellow;
     border-radius: 50%;
     display: inline-block;
     margin: 12px 3px 12px 3px;
@@ -40,3 +41,35 @@
     display: inline-block;
     margin: 12px 30px 12px 3px;
 }
+
+/*Main body*/
+.main-dashboard {
+    display: flex;
+}
+
+/*left nav-bar*/
+.left-navbar {
+    background-color: black;
+    height: 100vh;
+    width: 200px;
+}
+
+.left-navbar ul {
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+    font-size: 30px;
+    padding-top:  50px;
+    padding-left: 10px;
+}
+
+.left-navbar ul li {
+    padding: 20px;
+}
+
+.left-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+}
+
