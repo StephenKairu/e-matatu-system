@@ -4,72 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Profile</title>
 </head>
 <body>
-        <div class="sidebar">
-        <div class="content">
-            <div class="logo">
-                <i class='bx bxs-spa'></i>
-                <div class="logo-name"><span id="sytem">e-</span>Matatu System</div>
+
+
+<section class="profile">
+    <h1><span id="matatu">e-</span>Matatu</h1>
+    <div class="container">
+        <div class="main">
+            <div class="topbar">
+                <a href="#">My Profile</a>
+                <a href="#">DashBoard</a>
+                <a href="#">Revenue</a>
+                <a href="#">Matatu Details</a>
+                <a href="#">Reports</a>
             </div>
-            <i class='bx bx-menu' id="btn" ></i>
+            <div class="bottom">
+                <a href="#"><img src="./images/profilepic.png" width="60px" height="50px" alt="profile photo">My Profile</a>
+                <a href="#">Sign Out</a>
+            </div>
         </div>
-        <ul class="nav_bar">
-            <li>
-                <a href="#">
-                    <i class='bx bxs-user' ></i>
-                    <span class="links_name">My Profile</span>
-                </a>
-                <span class="tool">My Profile</span>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-dashboard' ></i>
-                    <span class="links_name">Dashboard</span>
-                </a>
-                <span class="tool">Dashboard</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class='bx bx-money-withdraw' ></i>
-                    <span class="links_name">Revenue</span>
-                </a>
-                <span class="tool">Revenue</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class='bx bx-detail' ></i>
-                    <span class="links_name">Matatu Details</span>
-                </a>
-                <span class="tool">Matatu Details</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class='bx bxs-report' ></i>
-                    <span class="links_name">Reports</span>
-                </a>
-                <span class="tool">Reports</span>
-        </ul>
     </div>
-<div class="dashboard_content">
-
-<script>
-        let btn = document.querySelector("#btn");
-        let sidebar = document.querySelector(".sidebar");
-        let searchBtn = document.querySelector(".bx-search-alt");
-
-    btn.onclick = function(){
-        sidebar.classList.toggle("active");
-    }
-
-    searchBtn.onclick = function(){
-        sidebar.classList.toggle("active");
-    }
-
-</script>
+</section>
 
 </body>
 </html>
