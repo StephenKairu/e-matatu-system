@@ -72,4 +72,11 @@
     color: #fff;
     list-style-type: none;
 }
+/*main body*/
 
+.main-content h1 {
+    padding-left: 30px;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: teal;
+}
