@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+/*top navbar*/
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    height: 50px;
+}
+
+.top-navbar h1 {
+    padding: 12px 12px 12px 50px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 12px 3px 12px 8px;
+}
+.dot2 {
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 12px 3px 12px 3px;
+}
+.dot3 {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 12px 30px 12px 3px;
+}
