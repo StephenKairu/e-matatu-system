@@ -24,16 +24,16 @@ google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Trips', ''],
-        ['Completed', 20],
-        ['NotCompleted', 0],
+        ['Trips', '', { role: 'style'}],
+        ['Completed', 15, 'green'],
+        ['NotCompleted',5, "black"],
         
     ]);
 
-    var options = {
+    var  options = {
         title: 'Daily Trips',
         pieHole: 0.6,
-        
+        style :['black']
     };
 
     
