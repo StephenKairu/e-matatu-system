@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style2.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9cd1c5457a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
@@ -32,13 +34,67 @@
 
     <div class="main-dashboard">
 
-        <div class="left-navbar">
-            <ul>
-                <li><a href="#">Profile</a></li>
-                <li><a href="../adminpanel.html">Dashboard</a></li>
-                <li><a href="#">Matatu status</a></li>
-                <li><a href="#">Crew</a></li>
-                <li><a href="#">Reports</a></li>
+
+        <div class="sidebar">
+            <section class="system">
+                <div class="logo">
+                    <h1><span id="mat">e-</span>Matatu system</h1>
+                </div>
+            </section>
+
+            <ul class="nav_bar">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        <span class="links_name">My Profile</span>
+                    </a>
+                <li>
+                    <a href="../adminpanel.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tool">Dashboard</span>
+                </li>
+
+                <li>
+                    <a href="./assets/crew.html">
+                        <i class='bx bx-money-withdraw'></i>
+                        <span class="links_name">Crew</span>
+                    </a>
+                    <span class="tool">Crew</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-detail'></i>
+                        <span class="links_name">Matatu Details</span>
+                    </a>
+                    <span class="tool">Matatu Details</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-report'></i>
+                        <span class="links_name">Reports</span>
+                    </a>
+                    <span class="tool">Reports</span>
+                </li>
+            </ul>
+
+            <ul class="nav_bar">
+                <li id="john_doe">
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        <span class="links_name">John Doe</span>
+                    </a>
+                </li>
+
+                <li id="sign_out">
+                    <a href="#">
+                        <i class='bx bx-log-out'></i>
+                    </a>
+                    <span class="links_name">Sign Out</span>
+                </li>
             </ul>
         </div>
         <div class="main-content">
@@ -154,8 +210,9 @@
                     <td>Active</td>
                 </tr>
             </table>
-
-            <button>Add New Crew member</button>
+<br>
+<br>
+            <button class="btn-list">Add New Crew member</button>
         </div>
     </div>
 
