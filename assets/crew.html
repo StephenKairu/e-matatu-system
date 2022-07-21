@@ -102,8 +102,8 @@
             <br>
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
                 title="Type in a name">
-                <br>
-                <br>
+            <br>
+            <br>
             <table id="myTable">
                 <tr class="header">
                     <th>#</th>
@@ -210,9 +210,53 @@
                     <td>Active</td>
                 </tr>
             </table>
-<br>
-<br>
-            <button class="btn-list">Add New Crew member</button>
+            <br>
+            <br>
+            <button class="btn-list" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">+ Add New Crew Member</button>
+
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <img src="./photos/user.jpg" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter full name" name="uname" required>
+                        <label for="idnum"><b>I.D No.</b></label>
+                        <input type="number" placeholder="Enter ID Number" name="idnum" required>
+                        <label for="dl"><b>Driver's License</b></label>
+                        <input type="number" placeholder="Enter Driver's License" name="dl" required>
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" name="email" required>
+                        <label for="contnum"><b>Contact Number</b></label>
+                        <input type="number" placeholder="Enter Contact Number" name="contnum" required>
+
+                        <label for="dob"><b>D.O.B</b></label>
+                        <input type="date" placeholder="Enter Date of Birth" name="dob" required>
+
+                        <p><b>Please select sex:</b></p> <br>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Male</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">Female</label> <br><br>
+                        <p><b>Upload documents</b></p><br>
+                        <input type="file" id="myFile" name="filename">
+                        <br> <br>
+                        <button type="submit">Add</button>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -235,6 +279,16 @@
                         tr[i].style.display = "none";
                     }
                 }
+            }
+        }
+
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
         }
     </script>
