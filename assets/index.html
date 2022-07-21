@@ -82,11 +82,11 @@
             <nav>
                 <h4 id="welcome">Welcome John Doe,</h4>
                 <div class="profile">
-                    <div class="edit">
+                    <div>
                         <section>
                             <a href="#">
                                 <i class='bx bx-edit' ></i>
-                                <span class="edit">edit profile</span>
+                                <button onclick="document.getElementById('edit').style.display='block'" style="width:auto;" ><span>edit profile</span></button>
                         </section>
                     </div>
                         <div class="profile_info">
@@ -100,7 +100,6 @@
     </div>
 
     <div id="my_account">
-        <section>
             <h2>PF number   : Pf0012233</h2>
             <h2>Last Name   : Doe</h2>
             <h2>Full Name   : John Doe</h2>
@@ -127,5 +126,32 @@
         </section>
     </div>
 
+
+<div id="edit" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Change Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Change Contact</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementsByClassName('edit').style.display='none'" class="cancelbtn">Enter</button>
+      <span class="psw">Cancel</span>
+    </div>
+  </form>
+</div>
+
+
+
+<script src="./js/script.js"></script>
 </body>
 </html>
