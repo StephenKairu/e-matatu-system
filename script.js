@@ -43,14 +43,17 @@ function drawChart() {
 }
 
 var arrDepart=new Array();
+var arrRoute=new Array();
 var arrNames=new Array();
 var arrTrips=new Array();
  
 function savedata(){
     var name = document.getElementById('name').value;
+    var trip = document.getElementById('route').value;
     var depart = document.getElementById('depart').value;
     var trip = document.getElementById('trip').value;
-    arrDepart[arrDepart.length]=depart;    
+    arrDepart[arrDepart.length]=depart;
+    arrRoute[arrRoute.length]=route;  
     arrNames[arrNames.length]=name;
     arrTrips[arrTrips.length]=trip;
   }
@@ -60,6 +63,7 @@ function displayData()
 {
   var content="<b>Data Entered by Stage Manager :</b><br>";
   content+= [...arrNames]+"</br>";
+  content+= [...arrRoute]+"</br>";
   content+=[...arrTrips]+"</br>";
   content+=[...arrDepart]+"</br>";
   
