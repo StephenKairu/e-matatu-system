@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+
+/*top navbar*/
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    color: #fff;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(184, 177, 177, 0.973);
+}
+
+.top-navbar h1 {
+    padding: 12px 12px 12px 50px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 12px 3px 12px 8px;
+}
+
+.dot2 {
+    height: 30px;
+    width: 30px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 12px 3px 12px 3px;
+}
+
+.dot3 {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 12px 30px 12px 3px;
+}
+
+/*Main body*/
+.main-dashboard {
+    display: flex;
+}
+
+/*left nav-bar*/
+.left-navbar {
+    background-color: black;
+    height: 200vh;
+    width: 200px;
+}
+
+.left-navbar ul {
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+.left-navbar ul li {
+    padding: 20px;
+}
+
+.left-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+}
+
+/*main body*/
+
+.main-content {
+    margin-left: 50px;
+}
+
+.main-content h1 {
+    padding-left: 30px;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 700px;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: teal;
+}
+
+td {
+    order: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#myInput {
+    background-image: url('../photos/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 40%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid;
+    margin-bottom: 12px;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#myTable {
+    border: 2px solid;
+}
