@@ -41,3 +41,29 @@ function drawChart() {
     var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
     chart.draw(data, options);
 }
+
+var arrDepart=new Array();
+var arrNames=new Array();
+var arrTrips=new Array();
+ 
+function savedata(){
+    var name = document.getElementById('name').value;
+    var depart = document.getElementById('depart').value;
+    var trip = document.getElementById('trip').value;
+    arrDepart[arrDepart.length]=depart;    
+    arrNames[arrNames.length]=name;
+    arrTrips[arrTrips.length]=trip;
+  }
+   
+ 
+function displayData() 
+{
+  var content="<b>Data Entered by Stage Manager :</b><br>";
+  content+= [...arrNames]+"</br>";
+  content+=[...arrTrips]+"</br>";
+  content+=[...arrDepart]+"</br>";
+  
+ 
+  document.getElementById('display').innerHTML = content;
+}
+ 

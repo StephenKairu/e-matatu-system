@@ -22,18 +22,17 @@ section{
     width: 80%;
 }
 .details-chart {
-    width: 80%;
-    height: 80%;
+    align-items: center;
 }
 .details-left p{
     font-size: xxx-large;
     font-weight: 800;
-    color: gold;
     text-align: center;
 }
 caption{
     font-size: xx-large;
     font-weight: 800;
+    color: gold;
 }
 h1 {
     color:black;
@@ -50,8 +49,8 @@ h1 {
     margin-top: 5%;
 }
 #donutchart {
-    width: 700; 
-    height: 500;
+    width: 900px;
+    height: 500px;
 }
 .details {
     display: flex;

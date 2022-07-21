@@ -59,6 +59,10 @@
                     <td>KDA 143M</td>
                   </tr>
                   <tr>
+                    <th scope="row">Target:</th>
+                    <td>20 Trips</td>
+                  </tr>
+                  <tr>
                     <th scope="row">No. of trips done today:</th>
                     <td>15 Trips</td>
                   </tr>
@@ -75,10 +79,33 @@
     </section>
     <section class="section2">
         <div class="details-chart">
-            <div id="donutchart"></div>
+            <div id="donutchart" style="width: 1000px; height: 800px;"></div>
         </div>
     </section>
-    <section></section>
+    <section>
+        <form>
+            <h1>Please enter data</h1>
+            <br>
+               <label for="Name">Matatu Name</label> 
+                <input id="name" type="text">
+              <br> 
+             
+            <br>
+              <label for="Trip">Trip No</label>
+            <input id="trip" type="text">
+            <br>
+            <br>   
+             <label for="Depart">Departure Time</label>
+            <input id="depart" type="text">
+            <br>
+             
+            <br>
+           <input type="button" value="Save" onclick="savedata()">
+            <input type="button" value="Show data" onclick="displayData()">
+            <br>
+         </form>
+         <div id="display"></div>
+    </section>
     <section></section>
 <!--Links donut-chart to google charts-->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
