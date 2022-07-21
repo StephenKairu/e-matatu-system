@@ -3,12 +3,37 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: teal;
 }
 
-section{}
-.section1 {
-    background-color: ;
+section{
+    background-color: white;
+    box-shadow: 0px 0px 3px 5px gray;
+    align-content:space-around;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.details {
+    background-color: white;
+    align-items: center;
+
+}
+.details-left {
+    width: 80%;
+}
+.details-chart {
+    width: 80%;
+    height: 80%;
+}
+.details-left p{
+    font-size: xxx-large;
+    font-weight: 800;
+    color: gold;
+    text-align: center;
+}
+caption{
+    font-size: xx-large;
+    font-weight: 800;
 }
 h1 {
     color:black;
@@ -21,17 +46,16 @@ h1 {
     color: gold;
 }
 .section2 {
-    background-color: ;
+    background-color: white ;
+    margin-top: 5%;
+}
+#donutchart {
+    width: 700; 
+    height: 500;
 }
 .details {
     display: flex;
-    flex-direction: row;
-}
-.details-left {
-    width: 50%;
-}
-.details-right {
-    width: 50%;
+    flex-direction: column;
 }
 .section3 {
     background-color: ;
@@ -47,6 +71,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     border: 3px solid purple;
+    font-size: x-large;
   }
   
   thead th:nth-child(1) {
