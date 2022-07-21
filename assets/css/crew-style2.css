@@ -118,6 +118,7 @@ td {
     padding: 12px 20px 12px 40px;
     border: 2px solid;
     margin-bottom: 12px;
+    margin-left: 50px;
 }
 
 #myTable tr.header,
@@ -138,6 +139,7 @@ td {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    margin-left: 50px;
     cursor: pointer;
     border-radius: 20px;
  }

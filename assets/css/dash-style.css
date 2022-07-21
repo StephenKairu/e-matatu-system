@@ -162,9 +162,9 @@ h1 {
     background: rgb(66, 165, 144);
     border: 1px solid;
     border-radius: 6px;
-    width: 240px;
+    width: 270px;
     margin-left: -16px;
-    margin-top: -18px;
+    margin-top: -8px;
 }
 
 /*main body*/
@@ -192,7 +192,7 @@ h1 {
 .card-container h3 {
     padding: 10px;
     font-size: 20px;
-    
+
 
 }
 
@@ -203,10 +203,10 @@ h1 {
 
 .content-in {
     display: flex;
-    
+
 }
 
-.content-in h4{
+.content-in h4 {
     font-size: 25px;
     font-weight: lighter;
     padding-left: 15px;
@@ -282,6 +282,7 @@ h1 {
     height: 300px;
     max-width: 1000px;
 }
+
 /*staff-list*/
 
 
@@ -338,9 +339,18 @@ td {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 20px;
- }
+}
 
 .more a {
     text-decoration: none;
     color: black;
- }
+}
+
+.footer {
+    background-color: teal;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+}
