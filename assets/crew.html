@@ -217,7 +217,7 @@
 
             <div id="id01" class="modal">
 
-                <form class="modal-content animate" action="/action_page.php" method="post">
+                <form class="modal-content animate" action="./crew.html" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close"
                             title="Close Modal">&times;</span>
@@ -226,20 +226,20 @@
 
                     <div class="container">
                         <label for="uname"><b>Full Name</b></label>
-                        <input type="text" placeholder="Enter full name" name="uname" required>
+                        <input type="text" placeholder="Enter full name" name="uname" id="uname" required>
                         <label for="idnum"><b>I.D No.</b></label>
-                        <input type="number" placeholder="Enter ID Number" name="idnum" required>
+                        <input type="number" placeholder="Enter ID Number" name="idnum" id="idnum" required>
                         <label for="dl"><b>Driver's License</b></label>
                         <input type="number" placeholder="Enter Driver's License" name="dl" required>
                         <label for="email"><b>Email</b></label>
-                        <input type="email" placeholder="Enter Email" name="email" required>
+                        <input type="email" placeholder="Enter Email" name="email" id="email" required>
                         <label for="contnum"><b>Contact Number</b></label>
-                        <input type="number" placeholder="Enter Contact Number" name="contnum" required>
+                        <input type="number" placeholder="Enter Contact Number" name="contnum" id="contnum" required>
 
                         <label for="dob"><b>D.O.B</b></label>
                         <input type="date" placeholder="Enter Date of Birth" name="dob" required>
 
-                        <p><b>Please select sex:</b></p> <br>
+                        <p><b>Please select Gender:</b></p> <br>
                         <input type="radio" id="html" name="fav_language" value="HTML">
                         <label for="html">Male</label><br>
                         <input type="radio" id="css" name="fav_language" value="CSS">
@@ -253,10 +253,13 @@
                     <div class="container" style="background-color:#f1f1f1">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'"
                             class="cancelbtn">Cancel</button>
-
                     </div>
                 </form>
             </div>
+
+            <br>
+            <br>
+            <h1>New users</h1>
         </div>
     </div>
 
@@ -291,6 +294,48 @@
                 modal.style.display = "none";
             }
         }
+
+        //new user function
+
+        function add() {
+
+            function Person(uname, idnum, email) {
+                this.uname = uname,
+                    this.idnum = idnum,
+                    this.email = email
+            };
+
+            var people = new Array();
+
+            var uname = document.getElementById('uname').value;
+            var idnum = document.getElementById('idnum').value;
+            var email = document.getElementById('email').value;
+
+            if (uname.length === 0 || idnum.length === 0 || email.length === 0) {
+                alert("Enter fields");
+                return;
+            } else {
+                var person = new Person(uname, idnum, email);
+                people[people.length] = person;
+
+                drawTable(people);
+            }
+        };
+
+
     </script>
+
+    <table>
+        <script type="text/javascript">
+
+           function drawTable(people){
+                for (var i = 0; i < people.length; i++) {
+                    document.write("<tr><td>" + i.uname + "</td><td>" + i.idnum + "</td><td>" + i.email + "</td></tr>");
+                }
+            }
+
+        </script>
+
+    </table>
 
 </body>
