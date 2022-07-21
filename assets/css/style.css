@@ -129,7 +129,7 @@ h1{
 
 .profile_info{
     display: flex;
-    gap:210px;
+    gap:270px;
     position: relative;
     padding-top: 9px;
     margin-left: 80px;
@@ -149,7 +149,7 @@ nav{
     border-radius: 10px;
     border: 1px solid;
     margin-right: 1%;
-    width: 100%;
+    /* width: 100%; */
     box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
 }
 
@@ -174,10 +174,10 @@ nav{
 }
 
 .nav{
-    margin-right: 300px;
-    margin-left: 24px;
-    width: 90%;
-    position: fixed;
+    /* margin-right: 300px;
+    margin-left: 24px; */
+    width: 100%;
+    /* position: fixed; */
 }
 
 
@@ -187,17 +187,16 @@ nav{
 }
 
 #my_account{
-    margin-left: 260px;
+    /* margin-left: 260px; */
     color: black;
-    padding-top: 100px;
     border-radius: 10px;
-    border: 1px solid;
-    margin-right: 1%;
-    width: 18%;
+    /* border: 1px solid; */
+    /* margin-right: 1%; */
+    width: 20%;
     height: 1%;
     box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
     font-size: smaller;
-    margin-left: 249px;
+    /* margin-left: 249px; */
     padding-bottom: -200px;
 }
 
@@ -229,29 +228,29 @@ h2{
 #contacts{
     color: black;
     border-radius: 10px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-right: 1%;
     width: 23%;
     height: 1%;
     box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
     font-size: smaller;
-    margin-left: 586px;
-    margin-top: -480px;
+    /* margin-left: 315px; 
+    margin-top: -480px; */
     display: none;
 }
 
 #general{
+    display: none;
     color: black;
     border-radius: 10px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-right: 1%;
     width: 15%;
     height: 1%;
     box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
     font-size: smaller;
-    margin-left: 586px;
-    margin-top: -480px;
-    display: none;
+    /* margin-left: 586px;
+    margin-top: -480px; */
 }
 
 
@@ -267,10 +266,10 @@ input[type=text], input[type=password] {
   
   
   /* Extra styles for the cancel button */
-  .cancelbtn {
+  .enterbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #29ddbf;
+    background-color: #e6f0ee;
   }
   
   .container {
@@ -317,7 +316,7 @@ input[type=text], input[type=password] {
   
   .close:hover,
   .close:focus {
-    color: red;
+    color: rgb(36, 148, 168);
     cursor: pointer;
   }
   
@@ -343,7 +342,15 @@ input[type=text], input[type=password] {
        display: block;
        float: none;
     }
-    .cancelbtn {
+    .enterbtn {
        width: 100%;
     }
   }
+
+
+
+
+.bodycontent{
+    margin-left: 260px;
+    margin-top: 3px;
+}
