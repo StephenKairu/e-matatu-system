@@ -49,26 +49,26 @@ new Chart("myChart", {
 });
 
 //revenue graphs
-var xValues2 = ["Mon","Tue","Wed","Thur","Fri","Sat","Sun"];
 
-new Chart("myChart2", {
-  type: "line",
-  data: {
-    labels: xValues2,
-    datasets: [{ 
-      data: [6600,5500,5000,5000,4700,4500,3000],
-      borderColor: "red",
-      fill: false
-    }, { 
-      data: [3300,3000,3000,4500,5000,4000,1000],
-      borderColor: "blue",
-      fill: false
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "Weekly Revenues in '000"
-    }
-  }
-});
+
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Day', 'Revenue'],
+  [1,9900],[2,8500],[3,8000],[4,9500],[5,9700],
+  [6,8500],[7,7000]
+]);
+// Set Options
+var options = {
+  title: 'Weekly Revenues in 000',
+  hAxis: {title: 'Day of the week'},
+  vAxis: {title: 'Revenues'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart2'));
+chart.draw(data, options);
+}
