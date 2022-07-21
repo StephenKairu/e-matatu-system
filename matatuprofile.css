@@ -13,7 +13,7 @@ body {
     background: teal;
     margin-left: 0.3%;
     padding-top: 1%;
-    margin-top: .74543%;
+    margin-top: 0.5%;
     margin-right: 0.2%;
     border-color: black;
     border-radius: 6px;
@@ -22,7 +22,7 @@ body {
     width: 240px;
     padding: 7px 15px;
     transition: all 0.5s ease;
-    height:98%;
+    height:100%;
     box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
 }
 
@@ -62,6 +62,8 @@ body {
     opacity: 40;
     top: 50%
 }
+
+
 .nav_bar{
     padding-top: 40px;
     font-size: larger;
@@ -86,16 +88,22 @@ h1{
     color: black;
     font-size: 25px;
 }
-
-#sign_out{
-    margin-top: 490px;
+#john_doe {
+    margin-top: 0px;
     margin-left: 90px;
     padding-top: 18px;
 }
-
+#sign_out{
+    margin-top: 0px;
+    margin-left: 90px;
+    padding-top: 18px;
+}
+.nav_bar a {
+    text-decoration: none;
+}
 #john_doe .bxs-user{
-    margin-top: 540px;
-    margin-left: -22px;
+    margin-top: 5px;
+    margin-left: -92px;
     
 }
 
@@ -171,175 +179,6 @@ nav{
     color: teal;
     border: none;
 }
-#my_account{
-    /* margin-left: 260px; */
-    color: black;
-    border-radius: 10px;
-    /* border: 1px solid; */
-    /* margin-right: 1%; */
-    width: 60%;
-    height: 1%;
-    box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
-    font-size: smaller;
-    /* margin-left: 249px; */
-    padding-bottom: -200px;
-}
-
-h2{
-    padding-top: 40px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-}
-
-.change_pass{
-    cursor: pointer;
-    background: rgb(188, 194, 194);
-    margin-left: 8px;
-    margin-bottom: 3px;
-    border: none;
-    box-shadow: inset 0 0 0 0 teal;
-    border-radius: 10px;
-    transition: ease-out 0.3s;
-    outline: none;
-    margin-top: 2px;
-}
-
-.change_pass:hover{
-    box-shadow: inset 300px 0 0 0 teal;
-    cursor: pointer;
-    color: black;
-}
-
-#contacts{
-    color: black;
-    border-radius: 10px;
-    /* border: 1px solid; */
-    margin-right: 1%;
-    width: 60%;
-    height: 1%;
-    box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
-    font-size: smaller;
-    /* margin-left: 315px; 
-    margin-top: -480px; */
-    display: none;
-}
-
-#general{
-    display: none;
-    color: black;
-    border-radius: 10px;
-    /* border: 1px solid; */
-    margin-right: 1%;
-    width: 60%;
-    height: 1%;
-    box-shadow: 2px 5px 20px rgba(24, 23, 23, 0.5);
-    font-size: smaller;
-    /* margin-left: 586px;
-    margin-top: -480px; */
-}
-
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  
-  /* Extra styles for the cancel button */
-  .enterbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #e6f0ee;
-  }
-  
-  .container {
-    padding: 16px;
-  }
-  
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  
-  /* The Modal (background) */
-  .modal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: rgb(36, 148, 168);
-    cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .enterbtn {
-       width: 100%;
-    }
-  }
-
-
-
-
-.bodycontent{
-    margin-left: 260px;
-    margin-top: 3px;
-}
-
 
 
 section{
@@ -362,6 +201,7 @@ section{
 }
 .details-chart {
     align-items: center;
+    margin-left: 9%;
     z-index: -1;
 }
 .details-left p{

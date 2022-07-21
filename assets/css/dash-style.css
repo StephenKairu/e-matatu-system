@@ -68,12 +68,11 @@
     background: teal;
     margin-left: 0.3%;
     padding-top: 1%;
-    margin-top: .74543%;
+    margin-top: 0%;
     margin-right: 0.2%;
     border-color: black;
     border-radius: 6px;
     border: 1px solid;
-
     width: 240px;
     padding: 7px 15px;
     transition: all 0.5s ease;
@@ -146,16 +145,23 @@ h1 {
     font-size: 25px;
 }
 
-#sign_out {
-    margin-top: 490px;
+#john_doe {
+    margin-top: 0px;
     margin-left: 90px;
     padding-top: 18px;
 }
-
-#john_doe .bxs-user {
-    margin-top: 540px;
-    margin-left: -22px;
-
+#sign_out{
+    margin-top: 0px;
+    margin-left: 90px;
+    padding-top: 18px;
+}
+.nav_bar a {
+    text-decoration: none;
+}
+#john_doe .bxs-user{
+    margin-top: 5px;
+    margin-left: -92px;
+    
 }
 
 .system {
