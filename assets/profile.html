@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./profile.css/profile.css">
+    <!-- web cdn icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>User Profile</title>
+</head>
+
+<body>
+
+
+    <section>
+        <div class="sidebar">
+            <section class="system">
+                <div class="logo">
+                    <h1><span id="mat">e-</span>Matatu system</h1>
+                </div>
+            </section>
+
+            <ul class="nav_bar">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        <span class="links_name">My Profile</span>
+                    </a>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tool">Dashboard</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-money-withdraw'></i>
+                        <span class="links_name">Revenue</span>
+                    </a>
+                    <span class="tool">Revenue</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-detail'></i>
+                        <span class="links_name">Matatu Details</span>
+                    </a>
+                    <span class="tool">Matatu Details</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-report'></i>
+                        <span class="links_name">Reports</span>
+                    </a>
+                    <span class="tool">Reports</span>
+                </li>
+            </ul>
+
+            <ul class="nav_bar">
+                <li id="john_doe">
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        <span class="links_name">John Doe</span>
+                    </a>
+                </li>
+
+                <li id="sign_out">
+                    <a href="#">
+                        <i class='bx bx-log-out'></i>
+                    </a>
+                    <span class="links_name">Sign Out</span>
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    <div class="nav">
+        <section>
+            <nav>
+                <h4 id="welcome">Welcome John Doe,</h4>
+                <div class="profile">
+                    <div>
+                        <section>
+                            <a href="#">
+                                <i class='bx bx-edit'></i>
+                                <button onclick="document.getElementById('edit').style.display='block'"
+                                    style="width:auto;"><span>edit profile</span></button></a>
+                        </section>
+                    </div>
+                    <div class="profile_info">
+                        <button id="myAccDetail" onclick="myAccDetail()">
+                            <h3>My Account</h3>
+                        </button>
+                        <div>
+                            <button id="contactDetail" onclick="contactDetail()">
+                                <h3>Contacts</h3>
+                            </button>
+                        </div>
+                        <div>
+                            <button id="genDetail" onclick="genDetail()">
+                                <h3>General</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </div>
+
+    <div class="bodycontent">
+
+        <div id="my_account">
+            <h2>PF number : Pf0012233</h2>
+            <h2>Last Name : Doe</h2>
+            <h2>Full Name : John Doe</h2>
+            <h2>Sex : Male</h2>
+            <h2>Salutation : Mr</h2>
+            <h2>Company Role : Administrator</h2>
+        </div>
+
+        <!-- my contacts -->
+        <div id="contacts">
+            <section>
+                <h2>Phone Number : +254712345678</h2>
+                <h2>Email adress : johndoe@gmail.com</h2>
+                <h2>Home Adress : 12345-00200</h2>
+                <h2>Home Town : Nairobi</h2>
+            </section>
+        </div>
+
+
+        <!-- general -->
+        <div id="general">
+            <section>
+                <h2>Religion : Christian</h2>
+                <h2>Marital status : Married</h2>
+                <h2>Status : active</h2>
+            </section>
+        </div>
+
+    </div>
+    <div id="edit" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+
+
+            <div class="container">
+
+                <label for="uname">Old Password</label>
+                <input type="text" placeholder="enter old password">
+
+                <label for="uname">New Password</label>
+                <input type="text" placeholder="enter new password">
+
+                <label for="uname"><b>Change Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Change Contact</b></label>
+                <input type="password" placeholder="Enter New Contact" name="psw" required>
+
+                <label for="psw"><b>Change Email Adress</b></label>
+                <input type="password" placeholder="Enter New Email-Adress" name="psw" required>
+
+                <label for="psw"><b>Change Home Adress</b></label>
+                <input type="password" placeholder="Enter New Home Adress" name="psw" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:teal">
+                <button type="button" onclick="document.getElementsByClassName('edit').style.display='none'"
+                    class="enterbtn">Enter</button>
+                <span class="psw">Cancel</span>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./js/profile.js"></script>
+</body>
+
+</html>
