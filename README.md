@@ -13,7 +13,7 @@
 + [Authors Info](#author-Info)
 
 ## Description
-<p>It is an web-based Management System that helps digitize the operations of Public Transport service providers and companies/SACCOs. This online system has been designed more specifically for the Kenya public transport sector but can also be easily adapted for other region's transport sectors. It seeks to solve the problem of transport sector players inability to quickly and easily log and access real-time data and information on their fleets' routes, trips, pick-up, drop-off times and profiles of their crew. It also seeks to provide estimates of expected revenue from each vehicle and their status, example, whether a vehicle is active, grounded, under repair or decommissioned.</p>
+<p>It is a web-based Management System that helps digitize the operations of Public Transport service providers and companies/SACCOs. This online system has been designed more specifically for the Kenya public transport sector but can also be easily adapted for other region's transport sectors. It seeks to solve the problem of transport sector players inability to quickly and easily log and access real-time data and information on their fleets' routes, trips, pick-up, drop-off times and profiles of their crew. It also seeks to provide estimates of expected revenue from each vehicle and their status, example, whether a vehicle is active, grounded, under repair or decommissioned.</p>
 
 ## Installation
 
