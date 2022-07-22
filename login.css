@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url(/assets/bumblebee\ .jpg);
+	background-image: url(assets/bumblebee\ .jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: cover;
